@@ -1275,3 +1275,9 @@ address span a {
   /* Cambio de color de fondo al pasar el ratón por encima para resaltar ligeramente */
   background-color: #888888;
 }
+
+nav #headerImg {
+  width: auto;
+  height: 50px;
+  padding-left: 120px;
+}
