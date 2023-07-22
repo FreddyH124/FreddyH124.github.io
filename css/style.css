@@ -1197,18 +1197,6 @@ address span a {
   height: auto;
 }
 
-/*Cosas para la imangen del logo del navbar*/
-.navbar-inverse .navbar-brand {
-  display: flex;
-  align-items: center;
-  padding: 5px;
-}
-.navbar-brand img {
-    height: 60px;
-    width: auto;
-    margin-right: 10px;
-}
-
 #clickableDiv {
   font-size: 20px;
   margin-left: 20px;
