@@ -809,19 +809,19 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 animated" data-animate="fadeInLeft">
-            <form action="#">
+            <form class="formulario" action="#">
               <div class="row">
                 <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="Nombre">
+                  <input id="nombre" type="text" class="form-control" placeholder="Nombre">
                 </div>
                 <div class="col-md-6">
-                  <input type="email" class="form-control" placeholder="Teléfono">
+                  <input id="telefono" type="tel" pattern="[0-9]{3}\s*[0-9]{3}\s*[0-9]{3}" title="xxx yyy zzz" class="form-control" placeholder="Teléfono">
                 </div>
                 <div class="col-md-12">
-                  <input type="email" class="form-control" placeholder="Email">
+                  <input id="email" type="email" class="form-control" placeholder="Email">
                 </div>
                 <div class="col-md-12">
-                  <textarea class="form-control" rows="3" placeholder="Mensaje"></textarea>
+                  <textarea id="msj" class="form-control" rows="3" placeholder="Mensaje"></textarea>
                 </div>
                 <div class="col-md-12">
                   <button class="btn btn-default submit">Enviar</button>

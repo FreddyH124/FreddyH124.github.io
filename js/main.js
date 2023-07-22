@@ -231,7 +231,7 @@ var SliderStatus = true;
 	    		return 4
 	    	else if($(window).innerWidth() >= 768)
 	    		return 3
-	    	else return 2
+	    	else return 1
 	    }
 
 	    var portWidth = $(window).innerWidth() / columnsSplit(),
@@ -442,6 +442,96 @@ var SliderStatus = true;
 			});
 		}
 	});
+
+
+	const datos = {
+		nombre: '',
+		telefono: '',
+		email: '',
+		mensaje: ''
+	}
+
+	const nombre = document.querySelector('#nombre')
+	const telefono = document.querySelector('#telefono')
+	const email = document.querySelector('#email')
+	const mensaje = document.querySelector('#msj')
+
+
+	nombre.addEventListener('input', leerTexto)
+	telefono.addEventListener('input', leerTexto)
+	email.addEventListener('input', leerTexto)
+	mensaje.addEventListener('input', leerTexto)
+
+
+	const form = document.querySelector('.formulario')
+
+	form.addEventListener('submit', function(event) {
+		event.preventDefault()
+
+		const {nombre, telefono, email, mensaje} = datos
+		
+		console.log(nombre)
+		console.log(telefono)
+		console.log(email)
+		console.log(mensaje)
+
+		if(nombre === '' || telefono === '' || email === '' || mensaje ===''){
+			console.log('faltan campos')
+			mostrarError('Todos los campos son obligatorios')
+			return
+		}
+
+
+
+		mostrarError('Enviado correctamente')
+	})
+
+
+	function leerTexto(e){
+		datos[e.target.id] = e.target.value
+	}
+
+	function mostrarError(msj) {
+		const error = document.createElement('p')
+
+		error.textContent = msj
+		error.classList.add('errorMsj')
+		
+
+		form.appendChild( error )
+
+		setTimeout(() => {
+			error.remove()
+		}, 3000);
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

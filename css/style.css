@@ -1269,3 +1269,8 @@ nav #headerImg {
   height: 50px;
   padding-left: 120px;
 }
+
+.errorMsj {
+  text-align: center;
+  text-transform: uppercase;
+}
