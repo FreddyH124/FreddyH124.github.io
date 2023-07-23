@@ -1216,7 +1216,6 @@ address span a {
 }
 
 #clickableDiv > header.subtitle > p {
-  text-align: justify;
   margin-left: 30px;
   margin-bottom: 40px;
 }
@@ -1270,4 +1269,15 @@ nav #headerImg {
 .errorMsj .correcto {
   text-align: center;
   text-transform: uppercase;
+}
+
+.photo {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente el contenido */
+  align-items: center; /* Centrar verticalmente el contenido */
+}
+
+.photo img {
+  max-width: 100%;
+  height: auto;
 }
