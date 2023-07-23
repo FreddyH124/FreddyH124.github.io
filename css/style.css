@@ -1213,24 +1213,25 @@ address span a {
 #clickableDiv > header.subtitle > h2 > span {
   color: #ffa600;
   text-transform: uppercase;
+  font-size: 25px;
 }
 
-#clickableDiv > header.subtitle > p {
+/*#clickableDiv > header.subtitle > p {
   margin-left: 30px;
   margin-bottom: 40px;
-}
+}*/
 
 #clickableDiv > header.subtitle > header.subsubtitle > h2 > span {
   color: #e6aa3b;
   text-transform: uppercase;
-  margin-left: 15px;
+  font-size: 23px;
 }
 
-#clickableDiv > header.subtitle > header.subsubtitle > p {
+/*#clickableDiv > header.subtitle > header.subsubtitle > p {
   text-align: justify;
   margin-left: 30px;
   margin-bottom: 40px;
-}
+}*/
 
 #loginLink {
   /* Estilo de fuente */
