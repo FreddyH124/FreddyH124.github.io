@@ -1198,7 +1198,6 @@ address span a {
 }
 
 #clickableDiv {
-  font-size: 20px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -1214,7 +1213,6 @@ address span a {
 #clickableDiv > header.subtitle > h2 > span {
   color: #ffa600;
   text-transform: uppercase;
-  font-size: 30px;
 }
 
 #clickableDiv > header.subtitle > p {
@@ -1226,7 +1224,6 @@ address span a {
 #clickableDiv > header.subtitle > header.subsubtitle > h2 > span {
   color: #e6aa3b;
   text-transform: uppercase;
-  font-size: 23px;
   margin-left: 15px;
 }
 
@@ -1270,7 +1267,7 @@ nav #headerImg {
   padding-left: 120px;
 }
 
-.errorMsj {
+.errorMsj .correcto {
   text-align: center;
   text-transform: uppercase;
 }

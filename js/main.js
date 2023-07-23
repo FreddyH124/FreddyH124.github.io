@@ -228,9 +228,9 @@ var SliderStatus = true;
 	    	if($(window).innerWidth() >= 1200)
 	    		return 5
 	    	else if($(window).innerWidth() >= 992)
-	    		return 4
-	    	else if($(window).innerWidth() >= 768)
 	    		return 3
+	    	else if($(window).innerWidth() >= 768)
+	    		return 2
 	    	else return 1
 	    }
 
@@ -454,7 +454,7 @@ var SliderStatus = true;
 	const nombre = document.querySelector('#nombre')
 	const telefono = document.querySelector('#telefono')
 	const email = document.querySelector('#email')
-	const mensaje = document.querySelector('#msj')
+	const mensaje = document.querySelector('#mensaje')
 
 
 	nombre.addEventListener('input', leerTexto)
@@ -483,12 +483,26 @@ var SliderStatus = true;
 
 
 
-		mostrarError('Enviado correctamente')
+		mostrarMensaje('Enviado correctamente')
 	})
 
 
 	function leerTexto(e){
 		datos[e.target.id] = e.target.value
+	}
+
+	function mostrarMensaje(msj){
+		const alert = document.createElement('p')
+
+		alert.textContent = msj
+		alert.classList.add('correcto')
+		
+
+		form.appendChild( alert )
+
+		setTimeout(() => {
+			alert.remove()
+		}, 3000);
 	}
 
 	function mostrarError(msj) {
@@ -535,7 +549,7 @@ var SliderStatus = true;
 
 
 
-	let IsLogged = sessionStorage.getItem("IsLogged") === "true";
+	/*let IsLogged = sessionStorage.getItem("IsLogged") === "true";
 
 	console.log("logged", IsLogged)
 
@@ -565,7 +579,7 @@ var SliderStatus = true;
 	}
 
 	updateLoginButton();
-
+**/
     
 })(jQuery);
 
