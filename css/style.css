@@ -44,11 +44,11 @@ h2 span {
 }
 
 .bg-fixed {
-  width: 100%;
+  width: auto;
   height: 100%;
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
   background-attachment: fixed;
   text-shadow: 0 0 15px rgba(0,0,0,0.6);
 }
