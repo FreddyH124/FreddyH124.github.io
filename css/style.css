@@ -1017,18 +1017,14 @@ span.quot-name:before {
 
 .container-portfolio .portfolio-view p {
   max-height: 70px;
-  overflow: hidden;
   letter-spacing: 1px;
   font-size: 68.5%;
-  padding: 0 10px 0 0;
-  width: 50%;
-  border-right: 1px solid #FFF;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0.5em 3.2em;
   text-align: right;
-  opacity: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-40px,0,0);
-  transform: translate3d(-40px,0,0);
+
 }
 
 .container-portfolio .portfolio-view:hover p {

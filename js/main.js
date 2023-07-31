@@ -265,7 +265,7 @@ var SliderStatus = true;
 
 			        //var portList = $('<figure class="portfolio-view ' + b.category + '" style="width:' + portWidth + 'px;height:' + (portWidth-113) + 'px"><img src="' + image + '"><figcaption><h2>' + b.title + '</span></h2><p>' + b.text + '</p><a href="' + b.link + '">View more</a></figcaption></figure>');
 
-					var portList = $('<figure class="portfolio-view" style="width:' + portWidth + 'px;height:' + (portWidth-113) + 'px"><img src="' + image + '"><figcaption><h2>' + b.title + '</span></h2><a href="' + b.link + '"></a></figcaption></figure>');
+					var portList = $('<figure class="portfolio-view" style="width:' + portWidth + 'px;height:' + (portWidth-113) + 'px"><img src="' + image + '"><figcaption><h2>' + b.title + '</span></h2><a href="' + b.link + '"></a><p>Leer más</p></figcaption></figure>');
 
 					
 			    	portList.appendTo(containerPortfolio);
