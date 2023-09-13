@@ -1,21 +1,18 @@
-/*
-	Daraz by TEMPLATE STOCK
-    templatestock.co @templatestock
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
-
 @import url(http://fonts.googleapis.com/css?family=Raleway:700,500,400);
 
+/*puede que no haga falta*/
 ::-moz-selection { /* Code for Firefox */
   color: #fff;
   background: #008ED6;
 }
 
+/*Sirve para modificar de que color se seleccionan los textos*/
 ::selection {
   color: #fff;
   background: #008ED6;
 }
 
+/*Para que utilice la totalidad de la altura del viewport del navegador*/
 html {
   height: 100%;
 }
@@ -43,16 +40,30 @@ h2 span {
   opacity: 1;
 }
 
+/*Para la imagen de fondo del principio de la pagina*/
 .bg-fixed {
-  width: auto;
+  width: 100%;
   height: 100%;
-  background-repeat: repeat;
-  background-position: center;
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
   background-attachment: fixed;
   text-shadow: 0 0 15px rgba(0,0,0,0.6);
 }
 
+@media (max-width: 768px) {
+  .bg-fixed {
+    width: auto;
+    height: 100%;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+    text-shadow: 0 0 15px rgba(0,0,0,0.6);
+  }
+}
+
+/*Crea el efecto oscurecido de la imagen de fondo del principio*/
 .overlay {
   background-color: rgba(0,0,0,0.63);
   background-image: url(../img/overlay-pattern.png) !important;

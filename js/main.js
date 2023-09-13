@@ -27,41 +27,15 @@ var SliderStatus = true;
 
 	"use strict"
 
-	var /*aPrev = $(".nav-slide a.prev"),
-		aNext = $(".nav-slide a.next"),
-		NextTitle = $(".nav-slide a.next h3"),
-		NextAuthor = $(".nav-slide a.next p"),
-		NextImg = $(".nav-slide a.next img"),
-		PrevTitle = $(".nav-slide a.prev h3"),
-		PrevAuthor = $(".nav-slide a.prev p"),
-		PrevImg = $(".nav-slide a.prev img"),*/
-		activeSlide = $(".image-slide"),
+	var activeSlide = $(".image-slide"),
 		activeTitle = $(".slider-content h1"),
 		activeIndex
-		/*, nextIndex, prevIndex,
-		objHeaderLength = dataHeader.length - 1*/
-		//SliderTimeout = false;
 
-	/*aPrev.on("click", function(){
-		loader(false);
-	});
-
-	aNext.on("click", function(){
-		loader(true);
-	});*/
-
-	/*function SliderInterval(){
-		SliderTimeout = setInterval(function(){
-			if(SliderStatus) loader(true);
-		}, 8000);
-	}*/
 
 	function startImageHeader(){
 		if(typeof activeIndex === "undefined")
 		{
 			activeIndex = 0;
-			//nextIndex = 1;
-			//prevIndex = objHeaderLength;
 		}
 
 		dataHeader.forEach(function(a){

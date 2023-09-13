@@ -9,14 +9,19 @@
 	<head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conecta</title>
     <link rel = "icon" href = "images/favicon.ico" type = "image/x-icon">
+
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
 
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/animate.css"/>
 
+    <link rel="preload" href="css/style.css" as="style" />
 		<link rel="stylesheet" href="css/style.css" />
 
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
@@ -24,886 +29,873 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZXJBVDf7R4JqmSpopVPoduIGWx1IwpBM"></script>
     <script type="text/javascript" src="js/plugins.js"></script>
 
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 	</head>
 	<body>
-	<!--<div class="svg-wrap">
-      <svg width="64" height="64" viewBox="0 0 64 64">
-        <path id="arrow-left" d="M26.667 10.667q1.104 0 1.885 0.781t0.781 1.885q0 1.125-0.792 1.896l-14.104 14.104h41.563q1.104 0 1.885 0.781t0.781 1.885-0.781 1.885-1.885 0.781h-41.563l14.104 14.104q0.792 0.771 0.792 1.896 0 1.104-0.781 1.885t-1.885 0.781q-1.125 0-1.896-0.771l-18.667-18.667q-0.771-0.813-0.771-1.896t0.771-1.896l18.667-18.667q0.792-0.771 1.896-0.771z"></path>
-      </svg>
-
-      <svg width="64" height="64" viewBox="0 0 64 64">
-        <path id="arrow-right" d="M37.333 10.667q1.125 0 1.896 0.771l18.667 18.667q0.771 0.771 0.771 1.896t-0.771 1.896l-18.667 18.667q-0.771 0.771-1.896 0.771-1.146 0-1.906-0.76t-0.76-1.906q0-1.125 0.771-1.896l14.125-14.104h-41.563q-1.104 0-1.885-0.781t-0.781-1.885 0.781-1.885 1.885-0.781h41.563l-14.125-14.104q-0.771-0.771-0.771-1.896 0-1.146 0.76-1.906t1.906-0.76z"></path>
-      </svg>
-    </div>-->
-
-
     <!-- MAIN CONTENT -->
 
-   <div class="container-fluid">
+    <div class="container-fluid">
 
-    <!-- HEADER -->
+      <!-- HEADER -->
 
-    <section id="header">
+      <section id="header">
 
-      <!-- NAVIGATION -->
-      <nav class="navbar navbar-fixed-top navbar-default bottom">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <!--<a class="navbar-brand" href="#header">CONECTA</a>-->
+        <!-- NAVIGATION -->
+        <nav class="navbar navbar-fixed-top navbar-default bottom">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
 
-            <img id="headerImg" src="images/LogoConecta.png">
-   
-            <!--<a class="navbar-brand" href="">
-              CONECTA 
-            </a>-->
+              <img id="headerImg" src="images/LogoConecta.png">
+              
+            </div><!-- /.navbar-header -->
 
+            <div class="collapse navbar-collapse" id="menu">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#header">Inicio</a></li>
+                <li><a href="#about">Sobre nosotros</a></li>
+                <li><a href="#services">Servicios</a></li>              
+                <li><a href="#team">Organización Conecta</a></li>
+                <li><a href="#contact">Contacto</a></li>
+              </ul>
+            </div> <!-- /.navbar-collapse -->
+          </div> <!-- /.container -->
+        </nav>
+
+        <!-- SLIDER -->
+        <div class="header-slide">
+          <section>
+            <div id="loader" class="pageload-overlay" data-opening="M 0,0 0,60 80,60 80,0 z M 80,0 40,30 0,60 40,30 z">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none">
+                <path d="M 0,0 0,60 80,60 80,0 Z M 80,0 80,60 0,60 0,0 Z"/>
+              </svg>
+            </div> <!-- /.pageload-overlay -->
             
-          </div><!-- /.navbar-header -->
+            <div class="image-slide bg-fixed">
+              <div class="overlay">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
 
-          <div class="collapse navbar-collapse" id="menu">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#header">Inicio</a></li>
-              <li><a href="#about">Sobre nosotros</a></li>
-              <li><a href="#services">Servicios</a></li>              
-              <li><a href="#team">Organización Conecta</a></li>
-              <li><a href="#contact">Contacto</a></li>
-            </ul>
-          </div> <!-- /.navbar-collapse -->
+                      <div class="slider-content">
+                        <h1></h1>
+                        <p>Motivados para ver crecer a tu familia, cubriendo todas tus necesidades.</p>
+                      </div>
+
+                    </div> <!-- /.col-md-12 -->
+                  </div> <!-- /.row -->
+                </div> <!-- /.container -->
+              </div> <!-- /.overlay -->
+            </div> <!-- /.image-slide -->
+
+            <!--<nav class="nav-slide">
+              <a class="prev" href="#prev">
+                <span class="icon-wrap">
+                  <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                    <use xlink:href="#arrow-left">
+                  </svg>
+                </span>
+                <div>
+                  <span>Prev Photo</span>
+                  <h3>...</h3>
+                  <p>...</p>
+                  <img alt="Previous thumb">
+                </div>
+              </a>
+              <a class="next" href="#next">
+                <span class="icon-wrap">
+                  <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                    <use xlink:href="#arrow-right">
+                  </svg>
+                </span>
+                <div>
+                  <span>Next Photo</span>
+                  <h3>...</h3>
+                  <p>...</p>
+                  <img alt="Next thumb">
+                </div>
+              </a>
+            </nav>-->
+          </section>
+
+          <script type="text/javascript">
+          var dataHeader = [
+                              {
+                                bigImage :"images/conectaMain.jpg",
+                                title : "Conecta Fuente Álamo",
+                                author : "Templatestock"
+                              }
+                          ]
+              loaderSVG = new SVGLoader(document.getElementById('loader'), {speedIn : 600, speedOut : 600, easingIn : mina.easeinout});
+              loaderSVG.show()
+          </script>
+
+        </div><!-- /.header-slide -->
+      </section>
+
+      <!-- HEADER END -->
+
+
+      <!-- ABOUT -->
+
+      <section id="about" class="light">
+        <header class="title">
+          <h2>Sobre <span>Nosotros</span></h2>
+          <p>Fundada en 2023, <strong>CONECTA</strong> es una asociación sin ánimo de lucro, <strong>dedicada a mejorar las necesidades de las familias</strong>, con especial enfoque en niños y adolescentes.</p>
+        </header>
+
+        <div class="container">
+          <div class="row table-row">
+            <div class="col-sm-5 hidden-xs">
+              <div class="section-content">
+                <div class="big-image" style="background-image:url(images/logoConectaAbout.jpg)"></div>
+              </div>
+            </div>
+
+            <div class="col-sm-8">
+              <div class="section-content">
+
+                <p class="justified">
+                  En CONECTA entendemos que la familia es el pilar fundamental de la sociedad, y nos comprometemos a brindar el apoyo necesario para fortalecerla en todos los aspectos.
+                </p>
+
+                <p class="justified">
+                  Contamos con expertos en <strong>psicología, logopedia y pedagogía terapéutica</strong>, con amplia formación y experiencia en los campos clínico y educativo. 
+                  Nuestro equipo trabaja de forma <strong>interdisciplinar</strong> para ayudar a las personas y familias a alcanzar sus metas.
+                </p>
+
+                <p class="justified">
+                  Nos esforzamos por comprender las necesidades únicas de tu familia y adaptar nuestros servicios a ellas. Valoramos los puntos fuertes de cada miembro y 
+                  creamos un entorno de confianza. Por lo tanto, nuestros servicios se personalizan de acuerdo con las necesidades de cada miembro de la familia.
+                </p>
+
+                <p class="justified">
+                  Mucho antes de la creación de CONECTA y hasta el día de hoy, estamos comprometidos con la inclusión de nuestros menores, especialmente de los adolescentes, 
+                  en el entorno social, deportivo y en las actividades de ocio del municipio.
+                </p>
+                
+                <p class="justified">
+                  Además de nuestras terapias especializadas, ofrecemos una amplia gama de actividades que incluyen <strong>excursiones</strong> y <strong>talleres</strong> de ocio y tiempo libre. Estas actividades 
+                  están diseñadas para estimular la creatividad, promover las habilidades sociales, fomentar el juego y facilitar el aprendizaje en un entorno divertido y seguro.
+                </p>
+                
+                <p class="justified">
+                  Arrancaremos <strong>próximamente</strong> con todos nuestros servicios. No obstante, te dejamos aquí toda la información y te invitamos a ponerte en contacto con nosotros
+                  para conocer la disponibilidad de todos ellos.
+                </p>
+
+                <p class="justified">
+                  Si estás interesado/a, no dudes en <strong>solicitar información</strong> para conocer nuestro catálogo actual de actividades y terapias. ¡TE ESPERAMOS!
+                </p>
+
+
+                </div>
+              </div>
+            </div>
+          </div> <!-- /.row table-row -->
         </div> <!-- /.container -->
-      </nav>
+      </section>
+    
+    
+        <!-- PORTFOLIO -->
 
-      <!-- SLIDER -->
-      <div class="header-slide">
-        <section>
-          <div id="loader" class="pageload-overlay" data-opening="M 0,0 0,60 80,60 80,0 z M 80,0 40,30 0,60 40,30 z">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none">
-              <path d="M 0,0 0,60 80,60 80,0 Z M 80,0 80,60 0,60 0,0 Z"/>
-            </svg>
-          </div> <!-- /.pageload-overlay -->
-          
-          <div class="image-slide bg-fixed">
-            <div class="overlay">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-12">
+      <section id="services" class="light">
+        <header class="title">
+          <h2><span>Servicios</span></h2>
+            <p>En CONECTA contamos con profesionales especializados en <strong>psicología, logopedia y terapia ocupacional</strong>, <strong>apoyo escolar</strong> personalizado y
+              emocionantes <strong>talleres y excursiones</strong> para promover el desarrollo y la diversión en un entorno seguro.
+            </p>
+        </header>
 
-                    <div class="slider-content">
-                      <h1></h1>
-                      <p>Motivados para ver crecer a tu familia, cubriendo todas tus necesidades.</p>
-                    </div>
+        <!--<div class="container-fluid">
+          <div class="row">
+            <ul id="filters" class="list-inline">
+              <li data-filter="all" class="filter">All</li>
+              <li data-filter=".branding" class="filter">Branding</li> 
+              <li data-filter=".graphic" class="filter">Graphic</li> 
+              <li data-filter=".printing" class="filter">Printing</li> 
+              <li data-filter=".video" class="filter">Video</li> 
+            </ul>
+          </div>-->
 
-                  </div> <!-- /.col-md-12 -->
-                </div> <!-- /.row -->
-              </div> <!-- /.container -->
-            </div> <!-- /.overlay -->
-          </div> <!-- /.image-slide -->
+          <div class="row">
+            <div class="container-portfolio">
+              <!-- PORTFOLIO OBJECT -->
+              <script type="text/javascript">
+              var portfolio = [
+                      {
+                        category : "root",
+                        image : "images/psicologia.jpg",
+                        title : "Psicología",
+                        link : "#clickableDiv",
+                        text : `
+                        <header class="title">
+                          <h2><span>Psicología</span></h2>
+                        </header>
+                          <p>
+                          Presencial, online y en el contexto escolar. Enfocada en niños, adolescentes y adultos.
+                          </p>
 
-          <!--<nav class="nav-slide">
-            <a class="prev" href="#prev">
-              <span class="icon-wrap">
-                <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
-                  <use xlink:href="#arrow-left">
-                </svg>
-              </span>
-              <div>
-                <span>Prev Photo</span>
-                <h3>...</h3>
-                <p>...</p>
-                <img alt="Previous thumb">
-              </div>
-            </a>
-            <a class="next" href="#next">
-              <span class="icon-wrap">
-                <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
-                  <use xlink:href="#arrow-right">
-                </svg>
-              </span>
-              <div>
-                <span>Next Photo</span>
-                <h3>...</h3>
-                <p>...</p>
-                <img alt="Next thumb">
-              </div>
-            </a>
-          </nav>-->
-        </section>
+                        <header class="subtitle">
+                          <h2><span>Niños y adolescentes</span></h2>
+                          <p>
+                            La <strong>Psicología Infanto-Juvenil</strong> es un ámbito de estudio que se enfoca en comprender el <strong>desarrollo de la personalidad, 
+                            las emociones y el comportamiento</strong>  de los niños y adolescentes a lo largo de las diferentes etapas de su vida.
+                          </p>
 
-        <script type="text/javascript">
-        var dataHeader = [
-                            {
-                              bigImage :"images/conectaMain.jpg",
-                              title : "Conecta Fuente Álamo",
-							                author : "Templatestock"
-                            }
-                        ]
-            loaderSVG = new SVGLoader(document.getElementById('loader'), {speedIn : 600, speedOut : 600, easingIn : mina.easeinout});
-            loaderSVG.show()
-        </script>
+                          <p>
+                            El principal <strong>objetivo</strong> de la Psicología Infanto-Juvenil es promover un crecimiento psicológico saludable en los niños y adolescentes,
+                            con el fin de lograr un adecuado ajuste emocional y social en cada fase de su desarrollo.
+                          </p>
 
-      </div><!-- /.header-slide -->
-    </section>
+                          <p>
+                            En este sentido, los profesionales de la psicología infanto-juvenil evalúan e intervienen en diversos aspectos que puedan afectar el bienestar y 
+                            la adaptación de los niños y adolescentes en su entorno. Consideran tanto el contexto familiar como el escolar, brindando el apoyo psicológico 
+                            necesario tanto a los padres como a los educadores que están involucrados en su vida diaria.
+                          </p>
 
-    <!-- HEADER END -->
+                          <p>
+                            La infancia y la adolescencia son las principales etapas del desarrollo en una persona, durante estos años, estamos en un continuo aprendizaje y desarrollo.
+                          </p>
 
+                          <p>
+                            Desde el ámbito de la psicología, buscamos ayudar a los menores a gestionar sus emociones, confiar en sí mismos, potenciar sus habilidades y 
+                            trabar aspectos relacionados con <strong>trastornos frecuentes como</strong>: 
 
-    <!-- ABOUT -->
+                            <div class=tabbedDiv>
+                              <ul>
+                                <li>Déficit de Atención e Hiperactividad.</li>
+                                <li>Retraso Mental.</li>
+                                <li>Acoso escolar (Bullying).</li>
+                                <li>Altas Capacidades.</li>
+                                <li>Déficits en Habilidades Sociales.</li>
+                                <li>Trastornos del Sueño (pesadillas, insomnio).</li>
+                                <li>Trastornos de la Eliminación (enuresis, encopresis).</li>
+                                <li>Problemas de Alimentación.</li>
+                                <li>Miedos y Fobias Infantiles.</li>
+                                <li>Celos entre hermanos.</li>
+                                <li>Ansiedad.</li>
+                                <li>Depresión.</li>
+                                <li>Problemas de conducta (Desobediencia, rabietas, agresividad, conductas oposicionistas y desafiantes).</li>
+                              </ul>
+                            </div>
+                          </p>
 
-    <section id="about" class="light">
-      <header class="title">
-        <h2>Sobre <span>Nosotros</span></h2>
-        <p>Fundada en 2023, <strong>CONECTA</strong> es una asociación sin ánimo de lucro, <strong>dedicada a mejorar las necesidades de las familias</strong>, con especial enfoque en niños y adolescentes.</p>
-      </header>
-
-      <div class="container">
-        <div class="row table-row">
-          <div class="col-sm-5 hidden-xs">
-            <div class="section-content">
-              <div class="big-image" style="background-image:url(images/logoConectaAbout.jpg)"></div>
-            </div>
-          </div>
-
-          <div class="col-sm-8">
-            <div class="section-content">
-
-              <p class="justified">
-                En CONECTA entendemos que la familia es el pilar fundamental de la sociedad, y nos comprometemos a brindar el apoyo necesario para fortalecerla en todos los aspectos.
-              </p>
-
-              <p class="justified">
-                Contamos con expertos en <strong>psicología, logopedia y pedagogía terapéutica</strong>, con amplia formación y experiencia en los campos clínico y educativo. 
-                Nuestro equipo trabaja de forma <strong>interdisciplinar</strong> para ayudar a las personas y familias a alcanzar sus metas.
-              </p>
-
-              <p class="justified">
-                Nos esforzamos por comprender las necesidades únicas de tu familia y adaptar nuestros servicios a ellas. Valoramos los puntos fuertes de cada miembro y 
-                creamos un entorno de confianza. Por lo tanto, nuestros servicios se personalizan de acuerdo con las necesidades de cada miembro de la familia.
-              </p>
-
-              <p class="justified">
-                Mucho antes de la creación de CONECTA y hasta el día de hoy, estamos comprometidos con la inclusión de nuestros menores, especialmente de los adolescentes, 
-                en el entorno social, deportivo y en las actividades de ocio del municipio.
-              </p>
-              
-              <p class="justified">
-                Además de nuestras terapias especializadas, ofrecemos una amplia gama de actividades que incluyen <strong>excursiones</strong> y <strong>talleres</strong> de ocio y tiempo libre. Estas actividades 
-                están diseñadas para estimular la creatividad, promover las habilidades sociales, fomentar el juego y facilitar el aprendizaje en un entorno divertido y seguro.
-              </p>
-              
-              <p class="justified">
-                Arrancaremos <strong>próximamente</strong> con todos nuestros servicios. No obstante, te dejamos aquí toda la información y te invitamos a ponerte en contacto con nosotros
-                para conocer la disponibilidad de todos ellos.
-              </p>
-
-              <p class="justified">
-                Si estás interesado/a, no dudes en <strong>solicitar información</strong> para conocer nuestro catálogo actual de actividades y terapias. ¡TE ESPERAMOS!
-              </p>
+                          <p>
+                            <strong>Si ves que tu hijo/a tiene algún signo de alguno de ellos, no dejes para mañana lo que puedas prevenir hoy</strong>.
+                          </p>
+                        </header>
 
 
-              </div>
-            </div>
-          </div>
-        </div> <!-- /.row table-row -->
-      </div> <!-- /.container -->
-    </section>
-	
-	
-	    <!-- PORTFOLIO -->
+                        <header class="subtitle">
+                          <h2><span>Adultez</span></h2>
 
-    <section id="services" class="light">
-      <header class="title">
-        <h2><span>Servicios</span></h2>
-          <p>En CONECTA contamos con profesionales especializados en <strong>psicología, logopedia y terapia ocupacional</strong>, <strong>apoyo escolar</strong> personalizado y
-            emocionantes <strong>talleres y excursiones</strong> para promover el desarrollo y la diversión en un entorno seguro.
-          </p>
-      </header>
-
-      <!--<div class="container-fluid">
-        <div class="row">
-          <ul id="filters" class="list-inline">
-            <li data-filter="all" class="filter">All</li>
-            <li data-filter=".branding" class="filter">Branding</li> 
-            <li data-filter=".graphic" class="filter">Graphic</li> 
-            <li data-filter=".printing" class="filter">Printing</li> 
-            <li data-filter=".video" class="filter">Video</li> 
-          </ul>
-        </div>-->
-
-        <div class="row">
-          <div class="container-portfolio">
-            <!-- PORTFOLIO OBJECT -->
-            <script type="text/javascript">
-            var portfolio = [
-                    {
-                      category : "root",
-                      image : "images/psicologia.jpg",
-                      title : "Psicología",
-                      link : "#clickableDiv",
-                      text : `
-                      <header class="title">
-                        <h2><span>Psicología</span></h2>
-                      </header>
-                        <p>
-                        Presencial, online y en el contexto escolar. Enfocada en niños, adolescentes y adultos.
-                        </p>
-
-                      <header class="subtitle">
-                        <h2><span>Niños y adolescentes</span></h2>
-                        <p>
-                          La <strong>Psicología Infanto-Juvenil</strong> es un ámbito de estudio que se enfoca en comprender el <strong>desarrollo de la personalidad, 
-                          las emociones y el comportamiento</strong>  de los niños y adolescentes a lo largo de las diferentes etapas de su vida.
-                        </p>
-
-                        <p>
-                          El principal <strong>objetivo</strong> de la Psicología Infanto-Juvenil es promover un crecimiento psicológico saludable en los niños y adolescentes,
-                          con el fin de lograr un adecuado ajuste emocional y social en cada fase de su desarrollo.
-                        </p>
-
-                        <p>
-                          En este sentido, los profesionales de la psicología infanto-juvenil evalúan e intervienen en diversos aspectos que puedan afectar el bienestar y 
-                          la adaptación de los niños y adolescentes en su entorno. Consideran tanto el contexto familiar como el escolar, brindando el apoyo psicológico 
-                          necesario tanto a los padres como a los educadores que están involucrados en su vida diaria.
-                        </p>
-
-                        <p>
-                          La infancia y la adolescencia son las principales etapas del desarrollo en una persona, durante estos años, estamos en un continuo aprendizaje y desarrollo.
-                        </p>
-
-                        <p>
-                          Desde el ámbito de la psicología, buscamos ayudar a los menores a gestionar sus emociones, confiar en sí mismos, potenciar sus habilidades y 
-                          trabar aspectos relacionados con <strong>trastornos frecuentes como</strong>: 
-
-                          <div class=tabbedDiv>
-                            <ul>
-                              <li>Déficit de Atención e Hiperactividad.</li>
-                              <li>Retraso Mental.</li>
-                              <li>Acoso escolar (Bullying).</li>
-                              <li>Altas Capacidades.</li>
-                              <li>Déficits en Habilidades Sociales.</li>
-                              <li>Trastornos del Sueño (pesadillas, insomnio).</li>
-                              <li>Trastornos de la Eliminación (enuresis, encopresis).</li>
-                              <li>Problemas de Alimentación.</li>
-                              <li>Miedos y Fobias Infantiles.</li>
-                              <li>Celos entre hermanos.</li>
-                              <li>Ansiedad.</li>
-                              <li>Depresión.</li>
-                              <li>Problemas de conducta (Desobediencia, rabietas, agresividad, conductas oposicionistas y desafiantes).</li>
-                            </ul>
-                          </div>
-                        </p>
-
-                        <p>
-                          <strong>Si ves que tu hijo/a tiene algún signo de alguno de ellos, no dejes para mañana lo que puedas prevenir hoy</strong>.
-                        </p>
-                      </header>
-
-
-                      <header class="subtitle">
-                        <h2><span>Adultez</span></h2>
-
-                        <p>
-                          La adultez es la etapa que ocupa mas años de nuestra vida. Durante esta, <strong>pasamos por numerosos cambios, acontecimientos, 
-                          situaciones y experiencias que nos hacen, en ocasiones, necesitar una mano amiga que nos ayude y nos facilite técnicas para afrontar y 
-                          resolver problemas</strong>.
-                        </p>
-                        
-                        <p>
-                          Las <strong>dificultades que se observan con mayor frecuencia</strong> en dicha etapa son:
-
-                          <div class=tabbedDiv>
-                            <ul>
-                              <li>Adicciones.</li>
-                              <li>Problemas de Autoestima y Autoconcepto.</li>
-                              <li>Trastornos del Estado del Ánimo.</li>
-                              <li>Dificultades en la Resolución de Conflictos.</li>
-                              <li>Problemas de Pareja.</li>
-                              <li>Duelo.</li>
-                            </ul>
-                          </div>
-                        </p>                        
-
-                      </header>
-
-
-                      <header class="subtitle">
-                        <h2><span>Prácticas parentales</span></h2>
-
-                        <header class="subsubtitle">
-                        <h2><span>Familia</span></h2>
-
-                        <p>
-                          CONECTA celebra y valora la diversidad de las familias. Creemos que cada familia es única y especial, con diferentes historias. Nuestro objetivo es 
-                          dar un espacio a cada miembro para poder ser escuchado y valorado, esforzándonos en crear un espacio seguro adaptado a las necesidades específicas 
-                          de cada familia.
-                        </p>
-
-                        <p>
-                          La crianza de los hijos es un viaje maravilloso y lleno de aprendizaje. A medida que nos adentramos en esta etapa, podemos encontrarnos con desafíos 
-                          inesperados que nos invitan a crecer y adaptarnos. Los padres desempeñan un papel fundamental en la formación de sus hijos, guiándolos en su camino 
-                          hacia la identidad, el comportamiento y los valores. Los momentos de alegría y dificultad se entrelazan, enriqueciendo nuestra experiencia y 
-                          brindándonos la oportunidad de ser más conscientes y comprensivos en nuestra crianza.
-                        </p>
-
-                        <p>
-                          <strong>CONECTA está aquí para apoyarte en los desafíos inesperados de la crianza</strong>. Juntos, superaremos obstáculos y creceremos en esta hermosa aventura.
-                        </p>
-
-                        <p>
-                          Los <strong>principales objetivos de intervención</strong> son:
-                        
-                          <div class=tabbedDiv>
-                            <ul>
-                              <li>Diferenciar entre conductas adecuadas y no adecuadas.</li>
-                              <li>Atender o Ignorar conductas.</li>
-                              <li>Estilos Educativos.</li>
-                              <li>Errores Educativos.</li>
-                              <li>Aprender a Establecer normas, etc.</li>
-                            </ul>
-                          </div>
-                        </p>
-                      </header>
-                      </header>
-                        `
-                      /*text : `<div class="row">
-                            <ul class="list-inline custom-filters">
-                              <li data-filter="all" class="filter">Todo</li>
-                              <li data-filter=".childTeen" class="filter">Niños y adolescentes</li> 
-                              <li data-filter=".adult" class="filter">Adultez</li> 
-                              <li data-filter=".practice" class="filter">Prácticas parentales</li> 
-                            </ul>
-                          </div>
-
-                          <div>
-
-                          </div>
+                          <p>
+                            La adultez es la etapa que ocupa mas años de nuestra vida. Durante esta, <strong>pasamos por numerosos cambios, acontecimientos, 
+                            situaciones y experiencias que nos hacen, en ocasiones, necesitar una mano amiga que nos ayude y nos facilite técnicas para afrontar y 
+                            resolver problemas</strong>.
+                          </p>
                           
-                          `*/
-                    },
-                    
-                    {
-                      category : "root",
-                      image : "images/logopedia.jpg",
-                      title : "Logopedia",
-                      link : "#clickableDiv",
-                      text : `
-                      <header class="title">
-                        <h2><span>Logopedia</span></h2>
-                      </header>
+                          <p>
+                            Las <strong>dificultades que se observan con mayor frecuencia</strong> en dicha etapa son:
+
+                            <div class=tabbedDiv>
+                              <ul>
+                                <li>Adicciones.</li>
+                                <li>Problemas de Autoestima y Autoconcepto.</li>
+                                <li>Trastornos del Estado del Ánimo.</li>
+                                <li>Dificultades en la Resolución de Conflictos.</li>
+                                <li>Problemas de Pareja.</li>
+                                <li>Duelo.</li>
+                              </ul>
+                            </div>
+                          </p>                        
+
+                        </header>
 
 
-                      <header class="subtitle">
-                        <p>
-                          La logopedia se centra en comprender y abordar los procesos de comunicación humana, incluyendo los trastornos asociados, mediante la implementación
-                          de estrategias preventivas, evaluativas y terapéuticas.
-                        </p>
-                        
-                        <p>
-                          Como profesionales especializados en salud, los logopedas se dedican a <strong>promover, educar, evaluar, diagnosticar, tratar y rehabilitar las 
-                          áreas de comunicación y lenguaje</strong>  (oral, escrito y gestual), así como a brindar orientación, asesoramiento, docencia e investigación en 
-                          este campo.
-                        </p>      
-                        
-                        <p>
-                          El ámbito de actuación de los logopedas abarca diversas etapas de la vida, desde la atención temprana en la infancia hasta la intervención en la 
-                          adolescencia, edad adulta y tercera edad.
-                        </p>
-                        
-                        <p>
-                          El <strong>objetivo</strong> principal de los tratamientos logopédicos es mejorar la funcionalidad comunicativa y la calidad de vida tanto del 
-                          paciente como de su entorno, a través de intervenciones personalizadas y basadas en la evidencia científica más actualizada.
-                        </p>
+                        <header class="subtitle">
+                          <h2><span>Prácticas parentales</span></h2>
 
-                        <p>
-                          <strong>Principales áreas de intervención</strong>:
+                          <header class="subsubtitle">
+                          <h2><span>Familia</span></h2>
 
-                          <div class=tabbedDiv>
-                            <ul>
-                              <li>Dificultades del lenguaje oral y escrito: Retraso simple del lenguaje, Trastorno especifico del lenguaje, retraso lector, dislexia, disortografía, discalculia.</li>
-                              <li>Dificultades en la voz: disfonicas, rinolalias, afonías y educación vocal entre otras.</li>
-                              <li>Dificultades en la comunicación: Sistemas alternativos y aumentativos de comunicación.</li>
-                              <li>Dificultades del habla: Dislalia, disglosia, disfemia, disartria, trastorno de los sonidos del habla, afasia.</li>
-                              <li>Dificultades de audición: hipoacusias, sorderas.</li>
-                              <li>Terapia Miofuncional: Respirador bucal, parálisis facial, deglución atípica, fisuras labio-palatinas, disfagia, trastornos motores orales.</li>
-                            </ul>
-                          </div>
-                        </p>
+                          <p>
+                            CONECTA celebra y valora la diversidad de las familias. Creemos que cada familia es única y especial, con diferentes historias. Nuestro objetivo es 
+                            dar un espacio a cada miembro para poder ser escuchado y valorado, esforzándonos en crear un espacio seguro adaptado a las necesidades específicas 
+                            de cada familia.
+                          </p>
 
-                        <p>
-                          En el tratamiento de Logopedia <strong> también ayudamos a mejorar distintas dificultades fruto de patologías como</strong>:
+                          <p>
+                            La crianza de los hijos es un viaje maravilloso y lleno de aprendizaje. A medida que nos adentramos en esta etapa, podemos encontrarnos con desafíos 
+                            inesperados que nos invitan a crecer y adaptarnos. Los padres desempeñan un papel fundamental en la formación de sus hijos, guiándolos en su camino 
+                            hacia la identidad, el comportamiento y los valores. Los momentos de alegría y dificultad se entrelazan, enriqueciendo nuestra experiencia y 
+                            brindándonos la oportunidad de ser más conscientes y comprensivos en nuestra crianza.
+                          </p>
 
-                          <div class=tabbedDiv>
-                            <ul>
-                              <li>Síndrome Down.</li>
-                              <li>Parálisis Cerebral.</li>
-                              <li>Discapacidad Intelectual.</li>
-                              <li>Trastorno Espectro Autista (TEA).</li>
-                              <li>Trastorno por Déficit de Atención con o sin Hiperactividad (TDAH).</li>
-                              <li>Mutismo.</li>
-                              <li>Esclerosis.</li>
-                              <li>Alzeimer.</li>
-                            </ul>
-                          </div>
-                        </p>
+                          <p>
+                            <strong>CONECTA está aquí para apoyarte en los desafíos inesperados de la crianza</strong>. Juntos, superaremos obstáculos y creceremos en esta hermosa aventura.
+                          </p>
 
-                        <p>
+                          <p>
+                            Los <strong>principales objetivos de intervención</strong> son:
+                          
+                            <div class=tabbedDiv>
+                              <ul>
+                                <li>Diferenciar entre conductas adecuadas y no adecuadas.</li>
+                                <li>Atender o Ignorar conductas.</li>
+                                <li>Estilos Educativos.</li>
+                                <li>Errores Educativos.</li>
+                                <li>Aprender a Establecer normas, etc.</li>
+                              </ul>
+                            </div>
+                          </p>
+                        </header>
+                        </header>
+                          `
+                        /*text : `<div class="row">
+                              <ul class="list-inline custom-filters">
+                                <li data-filter="all" class="filter">Todo</li>
+                                <li data-filter=".childTeen" class="filter">Niños y adolescentes</li> 
+                                <li data-filter=".adult" class="filter">Adultez</li> 
+                                <li data-filter=".practice" class="filter">Prácticas parentales</li> 
+                              </ul>
+                            </div>
 
-                        </p>
+                            <div>
 
-                      </header>
-                      `
-                    },
-                    {
-                      category : "root",
-                      image : "images/tocupacional.jpg",
-                      title : "Terapia Ocupacional",
-                      link : "#clickableDiv",
-                      text : `
+                            </div>
+                            
+                            `*/
+                      },
                       
-                      <header class="title">
-                        <h2><span>Terapia Ocupacional</span></h2>
-                      </header>
-                      
+                      {
+                        category : "root",
+                        image : "images/logopedia.jpg",
+                        title : "Logopedia",
+                        link : "#clickableDiv",
+                        text : `
+                        <header class="title">
+                          <h2><span>Logopedia</span></h2>
+                        </header>
 
-                      <header class="subtitle">
+
+                        <header class="subtitle">
+                          <p>
+                            La logopedia se centra en comprender y abordar los procesos de comunicación humana, incluyendo los trastornos asociados, mediante la implementación
+                            de estrategias preventivas, evaluativas y terapéuticas.
+                          </p>
+                          
+                          <p>
+                            Como profesionales especializados en salud, los logopedas se dedican a <strong>promover, educar, evaluar, diagnosticar, tratar y rehabilitar las 
+                            áreas de comunicación y lenguaje</strong>  (oral, escrito y gestual), así como a brindar orientación, asesoramiento, docencia e investigación en 
+                            este campo.
+                          </p>      
+                          
+                          <p>
+                            El ámbito de actuación de los logopedas abarca diversas etapas de la vida, desde la atención temprana en la infancia hasta la intervención en la 
+                            adolescencia, edad adulta y tercera edad.
+                          </p>
+                          
+                          <p>
+                            El <strong>objetivo</strong> principal de los tratamientos logopédicos es mejorar la funcionalidad comunicativa y la calidad de vida tanto del 
+                            paciente como de su entorno, a través de intervenciones personalizadas y basadas en la evidencia científica más actualizada.
+                          </p>
+
+                          <p>
+                            <strong>Principales áreas de intervención</strong>:
+
+                            <div class=tabbedDiv>
+                              <ul>
+                                <li>Dificultades del lenguaje oral y escrito: Retraso simple del lenguaje, Trastorno especifico del lenguaje, retraso lector, dislexia, disortografía, discalculia.</li>
+                                <li>Dificultades en la voz: disfonicas, rinolalias, afonías y educación vocal entre otras.</li>
+                                <li>Dificultades en la comunicación: Sistemas alternativos y aumentativos de comunicación.</li>
+                                <li>Dificultades del habla: Dislalia, disglosia, disfemia, disartria, trastorno de los sonidos del habla, afasia.</li>
+                                <li>Dificultades de audición: hipoacusias, sorderas.</li>
+                                <li>Terapia Miofuncional: Respirador bucal, parálisis facial, deglución atípica, fisuras labio-palatinas, disfagia, trastornos motores orales.</li>
+                              </ul>
+                            </div>
+                          </p>
+
+                          <p>
+                            En el tratamiento de Logopedia <strong> también ayudamos a mejorar distintas dificultades fruto de patologías como</strong>:
+
+                            <div class=tabbedDiv>
+                              <ul>
+                                <li>Síndrome Down.</li>
+                                <li>Parálisis Cerebral.</li>
+                                <li>Discapacidad Intelectual.</li>
+                                <li>Trastorno Espectro Autista (TEA).</li>
+                                <li>Trastorno por Déficit de Atención con o sin Hiperactividad (TDAH).</li>
+                                <li>Mutismo.</li>
+                                <li>Esclerosis.</li>
+                                <li>Alzeimer.</li>
+                              </ul>
+                            </div>
+                          </p>
+
+                          <p>
+
+                          </p>
+
+                        </header>
+                        `
+                      },
+                      {
+                        category : "root",
+                        image : "images/tocupacional.jpg",
+                        title : "Terapia Ocupacional",
+                        link : "#clickableDiv",
+                        text : `
+                        
+                        <header class="title">
+                          <h2><span>Terapia Ocupacional</span></h2>
+                        </header>
+                        
+
+                        <header class="subtitle">
+
+                          <p>
+                            La Terapia Ocupacional es una disciplina que se enfoca en evaluar las capacidades y habilidades de los niños con el objetivo de potenciar aquello 
+                            que esté ausente o alterado. Todo ello, <strong>busca promover desde edades tempranas una base sólida para el aprendizaje, estimulando el desarrollo 
+                              motor, sensorial y promoviendo la autonomía, autoestima e independencia en las actividades cotidianas, así como, mejorando su adaptación 
+                              social</strong>. Desde CONECTA, damos un <strong>enfoque sensorial</strong> a la terapia ocupacional.
+                          </p>
+                          
+                          <p>
+                            Recuerda, la terapia ocupacional es un apoyo imprescindible que puede marcar una gran diferencia en el bienestar y el desarrollo de tu hijo/a.
+                            <strong>¡Anímate a explorar esta oportunidad y brindarle a tu hijo/a la posibilidad de crecer y prosperar con la ayuda de la terapia 
+                            ocupacional!</strong>
+                          </p>                        
+
+                        </header>
+                        `
+                      },
+                      {
+                        category : "root",
+                        image : "images/apoyoEscolar.jpg",
+                        title : "Apoyo escolar",
+                        link : "#clickableDiv",
+                        text : `
+                        
+                        <header class="title">
+                          <h2><span>Apoyo escolar</span></h2>
+                        </header>
+                        
+                        <header class="subtitle">
 
                         <p>
-                          La Terapia Ocupacional es una disciplina que se enfoca en evaluar las capacidades y habilidades de los niños con el objetivo de potenciar aquello 
-                          que esté ausente o alterado. Todo ello, <strong>busca promover desde edades tempranas una base sólida para el aprendizaje, estimulando el desarrollo 
-                            motor, sensorial y promoviendo la autonomía, autoestima e independencia en las actividades cotidianas, así como, mejorando su adaptación 
-                            social</strong>. Desde CONECTA, damos un <strong>enfoque sensorial</strong> a la terapia ocupacional.
+                          En ocasiones, nuestros hijos pasan por un <strong>periodo de inestabilidad académica</strong>, ya sea por una determinada situación o por un trastorno 
+                          prevalente que requiere de ayuda en el ámbito académico. De esto se encargan nuestros especialistas en <strong>pedagogía terapéutica y 
+                          psicología</strong>. 
                         </p>
-                        
+
                         <p>
                           Recuerda, la terapia ocupacional es un apoyo imprescindible que puede marcar una gran diferencia en el bienestar y el desarrollo de tu hijo/a.
                           <strong>¡Anímate a explorar esta oportunidad y brindarle a tu hijo/a la posibilidad de crecer y prosperar con la ayuda de la terapia 
                           ocupacional!</strong>
                         </p>                        
 
-                      </header>
-                      `
-                    },
-                    {
-                      category : "root",
-                      image : "images/apoyoEscolar.jpg",
-                      title : "Apoyo escolar",
-                      link : "#clickableDiv",
-                      text : `
-                      
-                      <header class="title">
-                        <h2><span>Apoyo escolar</span></h2>
-                      </header>
-                      
-                      <header class="subtitle">
+                        </header>
 
-                      <p>
-                        En ocasiones, nuestros hijos pasan por un <strong>periodo de inestabilidad académica</strong>, ya sea por una determinada situación o por un trastorno 
-                        prevalente que requiere de ayuda en el ámbito académico. De esto se encargan nuestros especialistas en <strong>pedagogía terapéutica y 
-                        psicología</strong>. 
-                      </p>
+                        <header class="subtitle">
 
-                      <p>
-                        Recuerda, la terapia ocupacional es un apoyo imprescindible que puede marcar una gran diferencia en el bienestar y el desarrollo de tu hijo/a.
-                        <strong>¡Anímate a explorar esta oportunidad y brindarle a tu hijo/a la posibilidad de crecer y prosperar con la ayuda de la terapia 
-                        ocupacional!</strong>
-                      </p>                        
+                        <h2><span>Pedagogía terapéutica</span></h2>
 
-                      </header>
+                        <p>
+                          En CONECTA ofrecemos herramientas y enfoques efectivos para optimizar el proceso de aprendizaje para cualquier nivel de enseñanza. Nuestros profesionales
+                          trabajan en estrecha colaboración con los estudiantes, brindando <strong>técnicas de estudio</strong> adaptadas a sus necesidades individuales,
+                          <strong>estrategias de organización y planificación, desarrollo de habilidades de concentración y atención, y fomento de la motivación y 
+                          autoconfianza</strong> para lograr un rendimiento académico exitoso.
+                        </p>
 
-                      <header class="subtitle">
+                        <p>
+                          El profesor de Pedagogía Terapéutica es un especialista dedicado a brindar un acompañamiento educativo inclusivo a <strong>todos los alumnos</strong>, 
+                          especialmente a aquellos con necesidades específicas de apoyo educativo (NEAE). Su labor consiste en ofrecer respuestas educativas adaptadas y 
+                          personalizadas para garantizar el desarrollo integral de cada estudiante.
+                        </p>                        
 
-                      <h2><span>Pedagogía terapéutica</span></h2>
-
-                      <p>
-                        En CONECTA ofrecemos herramientas y enfoques efectivos para optimizar el proceso de aprendizaje para cualquier nivel de enseñanza. Nuestros profesionales
-                        trabajan en estrecha colaboración con los estudiantes, brindando <strong>técnicas de estudio</strong> adaptadas a sus necesidades individuales,
-                        <strong>estrategias de organización y planificación, desarrollo de habilidades de concentración y atención, y fomento de la motivación y 
-                        autoconfianza</strong> para lograr un rendimiento académico exitoso.
-                      </p>
-
-                      <p>
-                        El profesor de Pedagogía Terapéutica es un especialista dedicado a brindar un acompañamiento educativo inclusivo a <strong>todos los alumnos</strong>, 
-                        especialmente a aquellos con necesidades específicas de apoyo educativo (NEAE). Su labor consiste en ofrecer respuestas educativas adaptadas y 
-                        personalizadas para garantizar el desarrollo integral de cada estudiante.
-                      </p>                        
-
-                      </header>
-                      `
-                    },
-                    {
-                      category : "root",
-                      image : "images/talleres.jpg",
-                      title : "Talleres y excursiones",
-                      link : "#clickableDiv",
-                      text : `
-                      
-                      <header class="title">
-                        <h2><span>Talleres y excursiones</span></h2>
-                      </header>
-                      
-
-                      <header class="subtitle">
+                        </header>
+                        `
+                      },
+                      {
+                        category : "root",
+                        image : "images/talleres.jpg",
+                        title : "Talleres y excursiones",
+                        link : "#clickableDiv",
+                        text : `
                         
-                        <h2><span>Talleres</span></h2>
+                        <header class="title">
+                          <h2><span>Talleres y excursiones</span></h2>
+                        </header>
+                        
 
-                      <p>
-                        En nuestros talleres, ofrecemos una <strong>amplia variedad de actividades para promover el desarrollo integral de los niños</strong>. Entre ellos, 
-                        contamos con talleres de expresión artística, música, cocina, actividad física, habilidades sociales y todos ellos con <strong>personal especializado 
-                        en dar apoyo a niños con necesidades especiales</strong>. 
-                      </p>
+                        <header class="subtitle">
+                          
+                          <h2><span>Talleres</span></h2>
 
-                      <p>
-                        Estos talleres brindan un espacio seguro y adaptado donde los niños pueden fortalecer sus habilidades de comunicación, interacción social y empatía, 
-                        entre otras. Nuestro equipo de profesionales está capacitado para brindar el apoyo necesario, permitiendo que cada niño participe activamente y se 
-                        sienta incluido en todas las actividades. Estamos comprometidos en proporcionar un entorno enriquecedor y significativo para el crecimiento y el 
-                        bienestar de todos los niños que forman parte de nuestros talleres.
-                      </p>  
-                      
-                      <p>
-                        <strong>Ponte en contacto con nosotros para consultar el catálogo y la disponibilidad de plazas</strong>.
-                      </p>
+                        <p>
+                          En nuestros talleres, ofrecemos una <strong>amplia variedad de actividades para promover el desarrollo integral de los niños</strong>. Entre ellos, 
+                          contamos con talleres de expresión artística, música, cocina, actividad física, habilidades sociales y todos ellos con <strong>personal especializado 
+                          en dar apoyo a niños con necesidades especiales</strong>. 
+                        </p>
 
-                      </header>
+                        <p>
+                          Estos talleres brindan un espacio seguro y adaptado donde los niños pueden fortalecer sus habilidades de comunicación, interacción social y empatía, 
+                          entre otras. Nuestro equipo de profesionales está capacitado para brindar el apoyo necesario, permitiendo que cada niño participe activamente y se 
+                          sienta incluido en todas las actividades. Estamos comprometidos en proporcionar un entorno enriquecedor y significativo para el crecimiento y el 
+                          bienestar de todos los niños que forman parte de nuestros talleres.
+                        </p>  
+                        
+                        <p>
+                          <strong>Ponte en contacto con nosotros para consultar el catálogo y la disponibilidad de plazas</strong>.
+                        </p>
 
-                      <header class="subtitle">
+                        <div class="container">
+                          <div class="row">
 
-                      <h2><span>Excursiones y salidas</span></h2>
+                            <div class="photo">
+                              <img src="images/talleresDisponibles.jpg" alt="" srcset="images/talleresDisponibles.jpg 1x, images/talleresDisponibles.jpg 2x">
+                            </div>
+                            
+                          
+                          </div>
+                      </div> <!-- /.container -->
 
-                      <p>
-                        En CONECTA, organizamos emocionantes excursiones y salidas por el municipio para nuestros socios. Estas actividades nos brindan la oportunidad de 
-                        explorar y disfrutar juntos de nuevas experiencias fuera del entorno habitual. <strong>Mediante estas salidas, fomentamos la interacción social, 
-                        la práctica deportiva, el aprendizaje práctico, el fortalecimiento de habilidades sociales y la diversión en grupo</strong>. 
-                      </p>
+                        </header>
 
-                      <p>
-                        Nuestro <strong>objetivo</strong> es crear momentos memorables y enriquecedores, promoviendo el vínculo entre nuestros socios y generando un ambiente 
-                        de amistad y diversión compartida. <strong>¡Únete a nuestras excursiones y descubre todo lo que podemos vivir juntos!</strong>
-                      </p>   
-                      
-                      <p>
-                        <strong>Ponte en contacto con nosotros para consultar el catálogo y la disponibilidad de plazas</strong>.
-                      </p>
+                        <header class="subtitle">
 
-                      </header>
-                      `
-                    }
-                ];
-            </script>
+                        <h2><span>Excursiones y salidas</span></h2>
+
+                        <p>
+                          En CONECTA, organizamos emocionantes excursiones y salidas por el municipio para nuestros socios. Estas actividades nos brindan la oportunidad de 
+                          explorar y disfrutar juntos de nuevas experiencias fuera del entorno habitual. <strong>Mediante estas salidas, fomentamos la interacción social, 
+                          la práctica deportiva, el aprendizaje práctico, el fortalecimiento de habilidades sociales y la diversión en grupo</strong>. 
+                        </p>
+
+                        <p>
+                          Nuestro <strong>objetivo</strong> es crear momentos memorables y enriquecedores, promoviendo el vínculo entre nuestros socios y generando un ambiente 
+                          de amistad y diversión compartida. <strong>¡Únete a nuestras excursiones y descubre todo lo que podemos vivir juntos!</strong>
+                        </p>   
+                        
+                        <p>
+                          <strong>Ponte en contacto con nosotros para consultar el catálogo y la disponibilidad de plazas</strong>.
+                        </p>
+
+                        </header>
+                        `
+                      }
+                  ];
+              </script>
+            </div>
           </div>
+
+          <div id="clickableDiv">
+            
+          </div>
+
         </div>
-
-        <div id="clickableDiv">
-          
-        </div>
-
-      </div>
-    </section>
+      </section>
 
 
-    <!-- TEAM -->
+      <!-- TEAM -->
 
-    <section id="team" class="light">
-      <header class="title">
-        <h2>Organización <span>Conecta</span></h2>
-        <p>Personal comprometido con la salud y el desarrollo de la familia.</p>
-      </header>
-      
-      <div class="container">
-        <div class="row">
-
-          <div class="photo">
-            <img src="images/organigrama.jpg" alt="" srcset="images/organigrama.jpg 1x, images/organigrama.jpg 2x">
-          </div>
-          
-         
-        </div>
-      </div> <!-- /.container -->
-    </section>
-
-
-    <!--<section id="team" class="light">
-      <header class="title">
-        <h2>Nuestro <span>Equipo</span></h2>
-        <p>Lorem ipsum Dolor et reprehenderit laborum deserunt aliquip incididunt tempor id non. Lorem ipsum Fugiat anim labore cupidatat consequat non in sit dolore anim anim consequat nisi.</p>
-      </header>
-      
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 text-center">
-            <div class="wrap animated" data-animate="fadeInDown">
-              <div class="img-team">
-                <img src="images/team-1.png" alt="" class="img-circle">
-              </div>
-
-              <h3>Psicologia</h3>
-              <h5>Creative Director</h5>
-
-              <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea aliqua.</p>
-
-              <div class="team-social">
-                <ul class="list-inline social-list">
-                  <li><a href="#" class="fa fa-twitter"></a></li>
-                  <li><a href="#" class="fa fa-linkedin"></a></li>
-                  <li><a href="#" class="fa fa-facebook"></a></li>
-                  <li><a href="#" class="fa fa-google-plus"></a></li>
-                </ul> 
-              </div>                
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-6 text-center">
-            <div class="wrap animated" data-animate="fadeInDown"> 
-              <div class="img-team">
-                <img src="images/team-2.png" alt="" class="img-circle">
-              </div>
-
-              <h3>Ellie Morgan</h3>
-              <h5>Designer</h5>
-
-              <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea aliqua.</p>
-
-              <div class="team-social">
-                <ul class="list-inline social-list">
-                  <li><a href="#" class="fa fa-twitter"></a></li>
-                  <li><a href="#" class="fa fa-linkedin"></a></li>
-                  <li><a href="#" class="fa fa-facebook"></a></li>
-                  <li><a href="#" class="fa fa-google-plus"></a></li>
-                </ul> 
-              </div>                
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-6 text-center">
-            <div class="wrap animated" data-animate="fadeInDown"> 
-              <div class="img-team">
-                <img src="images/team-3.png" alt="" class="img-circle">
-              </div>
-
-              <h3>Elche</h3>
-              <h5>Developer</h5>
-
-              <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea aliqua.</p>
-
-              <div class="team-social">
-                <ul class="list-inline social-list">
-                  <li><a href="#" class="fa fa-twitter"></a></li>
-                  <li><a href="#" class="fa fa-linkedin"></a></li>
-                  <li><a href="#" class="fa fa-facebook"></a></li>
-                  <li><a href="#" class="fa fa-google-plus"></a></li>
-                </ul> 
-              </div>                
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-6 text-center">
-            <div class="wrap animated" data-animate="fadeInDown"> 
-              <div class="img-team">
-                <img src="images/team-4.png" alt="" class="img-circle">
-              </div>
-
-              <h3>JF Thiago</h3>
-              <h5>Commerce</h5>
-
-              <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea aliqua.</p>
-
-              <div class="team-social">
-                <ul class="list-inline social-list">
-                  <li><a href="#" class="fa fa-twitter"></a></li>
-                  <li><a href="#" class="fa fa-linkedin"></a></li>
-                  <li><a href="#" class="fa fa-facebook"></a></li>
-                  <li><a href="#" class="fa fa-google-plus"></a></li>
-                </ul> 
-              </div>                
-            </div>
-          </div>
-        </div>
-      </div> <!-- /.container ->
-    </section>-->
-	
-	    <!-- INFO -->
-
-    <!--<section id="info" class="dark">
-      <header class="title">
-        <h2>Our <span>Experties</span></h2>
-        <p>Lorem ipsum Nulla in incididunt esse tempor dolore ad voluptate aliquip magna sed in.</p>
-      </header>
-
-      <div class="container experties">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="skill">
-              <ul class="skill-bar list-unstyled">
-                <li><span class="percentage" data-value="50%"></span><em>Branding</em></li>
-                <li><span class="percentage" data-value="95%"></span><em>Development</em></li>
-                <li><span class="percentage" data-value="22%"></span><em>Social</em></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="skill">
-              <ul class="skill-bar list-unstyled">
-                <li><span class="percentage" data-value="63%"></span><em>Graphic Design</em></li>
-                <li><span class="percentage" data-value="90%"></span><em>Consulting</em></li>
-                <li><span class="percentage" data-value="43%"></span><em>Logo</em></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div> <!-- /.container ->
-    </section>	
-	
-
-    <section class="separator blue">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-6">
-            <div class="counter animated" data-animate="fadeInUp" data-delay="0">
-              <div class="counter-icon">
-                <i class="fa fa-group"></i>
-              </div>
-              <div class="counter-content">
-                <span class="value" data-from="0" data-to="43"></span>
-                <small>Clients</small>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-6 col-xs-6">
-            <div class="counter animated" data-animate="fadeInUp" data-delay="500">
-              <div class="counter-icon">
-                <i class="fa fa-leaf"></i>
-              </div>
-              <div class="counter-content">
-                <span class="value" data-from="0" data-to="20"></span>
-                <small>Awards</small>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-6 col-xs-6">
-            <div class="counter animated" data-animate="fadeInUp" data-delay="1000">
-              <div class="counter-icon">
-                <i class="fa fa-gears"></i>
-              </div>
-              <div class="counter-content">
-                <span class="value" data-from="0" data-to="34"></span>
-                <small>Projects</small>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-6 col-xs-6">
-            <div class="counter animated" data-animate="fadeInUp" data-delay="1500">
-              <div class="counter-icon">
-                <i class="fa fa-inbox"></i>
-              </div>
-              <div class="counter-content">
-                <span class="value" data-from="0" data-to="1298"></span>
-                <small>Mail</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  -->
-
-    <!-- FOOTER CONTACT -->
-
-    <section id="contact" class="dark">
-      <header class="title">
-        <h2>Contacta con <span>Nosotros</span></h2>
-        <p>
-          Contacta con nosotros a través de los siguientes medios y resolveremos tus dudas.
-        </p>
-      </header>
-
-      <div class="container">
+      <section id="team" class="light">
+        <header class="title">
+          <h2>Organización <span>Conecta</span></h2>
+          <p>Personal comprometido con la salud y el desarrollo de la familia.</p>
+        </header>
         
-          <div class="col-md-4 animated" data-animate="fadeInRight">
-            <address>
-              <span><i class="fa fa-envelope-o fa-lg"></i> <a href="mailto:contact@example.com">asoc.conecta&#64;gmail.com</a></span>
-              <span><i class="fa fa-phone fa-lg"></i> +34 646 16 74 09</span>
-              <span><i class="fa fa-map-marker fa-lg"></i> Fuente Álamo de Murcia</span>
-              <ul class="list-inline social-list">
-                <li><a href="https://www.facebook.com/profile.php?id=100095212251569" class="fa fa-facebook"></a></li>
-                <li><a href="https://www.instagram.com/conecta_asoc/" class="fa fa-instagram"></a></li>
-              </ul> 
-                <!--<span><i class="fa fa-globe fa-lg"></i> <a href="http://support.example.com">support.example.com</a></span>-->
-            </address>
+        <div class="container">
+          <div class="row">
+
+            <div class="photo">
+              <img src="images/organigrama.jpg" alt="" srcset="images/organigrama.jpg 1x, images/organigrama.jpg 2x">
+            </div>
+            
+          
           </div>
-
-		  
-        </div>
-        <!--<button type="button" id="loginLink"></button>-->
-      </div>
-
-    </section>
+        </div> <!-- /.container -->
+      </section>
 
 
-
-
-     <!--<section id="contact" class="dark">
-      <header class="title">
-        <h2>Contacta con <span>Nosotros</span></h2>
-        <p>
-          Describe brevemente tus dudas o sugerencias y nos pondremos en contacto contigo.
-        </p>
-      </header>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 animated" data-animate="fadeInLeft">
-            <form class="formulario" action="#">
-              <div class="row">
-                <div class="col-md-6">
-                  <input id="nombre" type="text" class="form-control" placeholder="Nombre">
+      <!--<section id="team" class="light">
+        <header class="title">
+          <h2>Nuestro <span>Equipo</span></h2>
+          <p>Lorem ipsum Dolor et reprehenderit laborum deserunt aliquip incididunt tempor id non. Lorem ipsum Fugiat anim labore cupidatat consequat non in sit dolore anim anim consequat nisi.</p>
+        </header>
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="wrap animated" data-animate="fadeInDown">
+                <div class="img-team">
+                  <img src="images/team-1.png" alt="" class="img-circle">
                 </div>
-                <div class="col-md-6">
-                  <input id="telefono" type="tel" pattern="[0-9]{3}\s*[0-9]{3}\s*[0-9]{3}" title="xxx yyy zzz" class="form-control" placeholder="Teléfono">
+
+                <h3>Psicologia</h3>
+                <h5>Creative Director</h5>
+
+                <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea aliqua.</p>
+
+                <div class="team-social">
+                  <ul class="list-inline social-list">
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-linkedin"></a></li>
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-google-plus"></a></li>
+                  </ul> 
+                </div>                
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="wrap animated" data-animate="fadeInDown"> 
+                <div class="img-team">
+                  <img src="images/team-2.png" alt="" class="img-circle">
                 </div>
-                <div class="col-md-12">
-                  <input id="email" type="email" class="form-control" placeholder="Email">
+
+                <h3>Ellie Morgan</h3>
+                <h5>Designer</h5>
+
+                <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea aliqua.</p>
+
+                <div class="team-social">
+                  <ul class="list-inline social-list">
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-linkedin"></a></li>
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-google-plus"></a></li>
+                  </ul> 
+                </div>                
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="wrap animated" data-animate="fadeInDown"> 
+                <div class="img-team">
+                  <img src="images/team-3.png" alt="" class="img-circle">
                 </div>
-                <div class="col-md-12">
-                  <textarea id="mensaje" class="form-control" rows="3" placeholder="Mensaje"></textarea>
+
+                <h3>Elche</h3>
+                <h5>Developer</h5>
+
+                <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea aliqua.</p>
+
+                <div class="team-social">
+                  <ul class="list-inline social-list">
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-linkedin"></a></li>
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-google-plus"></a></li>
+                  </ul> 
+                </div>                
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="wrap animated" data-animate="fadeInDown"> 
+                <div class="img-team">
+                  <img src="images/team-4.png" alt="" class="img-circle">
                 </div>
-                <div class="col-md-12">
-                  <button class="btn btn-default submit">Enviar</button>
+
+                <h3>JF Thiago</h3>
+                <h5>Commerce</h5>
+
+                <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea aliqua.</p>
+
+                <div class="team-social">
+                  <ul class="list-inline social-list">
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-linkedin"></a></li>
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-google-plus"></a></li>
+                  </ul> 
+                </div>                
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.container ->
+      </section>-->
+    
+        <!-- INFO -->
+
+      <!--<section id="info" class="dark">
+        <header class="title">
+          <h2>Our <span>Experties</span></h2>
+          <p>Lorem ipsum Nulla in incididunt esse tempor dolore ad voluptate aliquip magna sed in.</p>
+        </header>
+
+        <div class="container experties">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="skill">
+                <ul class="skill-bar list-unstyled">
+                  <li><span class="percentage" data-value="50%"></span><em>Branding</em></li>
+                  <li><span class="percentage" data-value="95%"></span><em>Development</em></li>
+                  <li><span class="percentage" data-value="22%"></span><em>Social</em></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="skill">
+                <ul class="skill-bar list-unstyled">
+                  <li><span class="percentage" data-value="63%"></span><em>Graphic Design</em></li>
+                  <li><span class="percentage" data-value="90%"></span><em>Consulting</em></li>
+                  <li><span class="percentage" data-value="43%"></span><em>Logo</em></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.container ->
+      </section>	
+    
+
+      <section class="separator blue">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <div class="counter animated" data-animate="fadeInUp" data-delay="0">
+                <div class="counter-icon">
+                  <i class="fa fa-group"></i>
+                </div>
+                <div class="counter-content">
+                  <span class="value" data-from="0" data-to="43"></span>
+                  <small>Clients</small>
                 </div>
               </div>
-            </form>
-          </div>
+            </div>
 
-          <div class="col-md-4 animated" data-animate="fadeInRight">
-            <address>
-                <span><i class="fa fa-map-marker fa-lg"></i> Fuente Álamo</span>
-                <span><i class="fa fa-phone fa-lg"></i> +34 646 16 74 09</span>
-                <span><i class="fa fa-envelope-o fa-lg"></i> <a href="mailto:contact@example.com">asoc.conecta&#64;gmail.com</a></span>
-                <!--<span><i class="fa fa-globe fa-lg"></i> <a href="http://support.example.com">support.example.com</a></span>->
-            </address>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <div class="counter animated" data-animate="fadeInUp" data-delay="500">
+                <div class="counter-icon">
+                  <i class="fa fa-leaf"></i>
+                </div>
+                <div class="counter-content">
+                  <span class="value" data-from="0" data-to="20"></span>
+                  <small>Awards</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <div class="counter animated" data-animate="fadeInUp" data-delay="1000">
+                <div class="counter-icon">
+                  <i class="fa fa-gears"></i>
+                </div>
+                <div class="counter-content">
+                  <span class="value" data-from="0" data-to="34"></span>
+                  <small>Projects</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <div class="counter animated" data-animate="fadeInUp" data-delay="1500">
+                <div class="counter-icon">
+                  <i class="fa fa-inbox"></i>
+                </div>
+                <div class="counter-content">
+                  <span class="value" data-from="0" data-to="1298"></span>
+                  <small>Mail</small>
+                </div>
+              </div>
+            </div>
           </div>
-		  
         </div>
-        <!--<button type="button" id="loginLink"></button>->
-      </div>
+      </section>
 
-    </section>-->
+    -->
 
-    <section id="footer">
+      <!-- FOOTER CONTACT -->
+
+      <section id="contact" class="dark">
+        <header class="title">
+          <h2>Contacta con <span>Nosotros</span></h2>
+          <p>
+            Contacta con nosotros a través de los siguientes medios y resolveremos tus dudas.
+          </p>
+        </header>
+
+        <div class="container">
+          
+            <div class="col-md-4 animated" data-animate="fadeInRight">
+              <address>
+                <span><i class="fa fa-envelope-o fa-lg"></i> <a href="mailto:contact@example.com">asoc.conecta&#64;gmail.com</a></span>
+                <span><i class="fa fa-phone fa-lg"></i> +34 646 16 74 09</span>
+                <span><i class="fa fa-map-marker fa-lg"></i> Fuente Álamo de Murcia</span>
+                <ul class="list-inline social-list">
+                  <li><a href="https://www.facebook.com/profile.php?id=100095212251569" class="fa fa-facebook"></a></li>
+                  <li><a href="https://www.instagram.com/conecta_asoc/" class="fa fa-instagram"></a></li>
+                </ul> 
+                  <!--<span><i class="fa fa-globe fa-lg"></i> <a href="http://support.example.com">support.example.com</a></span>-->
+              </address>
+            </div>
+
+        
+          </div>
+          <!--<button type="button" id="loginLink"></button>-->
+        </div>
+
+      </section>
+
+
+
+
+      <!--<section id="contact" class="dark">
+        <header class="title">
+          <h2>Contacta con <span>Nosotros</span></h2>
+          <p>
+            Describe brevemente tus dudas o sugerencias y nos pondremos en contacto contigo.
+          </p>
+        </header>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 animated" data-animate="fadeInLeft">
+              <form class="formulario" action="#">
+                <div class="row">
+                  <div class="col-md-6">
+                    <input id="nombre" type="text" class="form-control" placeholder="Nombre">
+                  </div>
+                  <div class="col-md-6">
+                    <input id="telefono" type="tel" pattern="[0-9]{3}\s*[0-9]{3}\s*[0-9]{3}" title="xxx yyy zzz" class="form-control" placeholder="Teléfono">
+                  </div>
+                  <div class="col-md-12">
+                    <input id="email" type="email" class="form-control" placeholder="Email">
+                  </div>
+                  <div class="col-md-12">
+                    <textarea id="mensaje" class="form-control" rows="3" placeholder="Mensaje"></textarea>
+                  </div>
+                  <div class="col-md-12">
+                    <button class="btn btn-default submit">Enviar</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-md-4 animated" data-animate="fadeInRight">
+              <address>
+                  <span><i class="fa fa-map-marker fa-lg"></i> Fuente Álamo</span>
+                  <span><i class="fa fa-phone fa-lg"></i> +34 646 16 74 09</span>
+                  <span><i class="fa fa-envelope-o fa-lg"></i> <a href="mailto:contact@example.com">asoc.conecta&#64;gmail.com</a></span>
+                  <!--<span><i class="fa fa-globe fa-lg"></i> <a href="http://support.example.com">support.example.com</a></span>->
+              </address>
+            </div>
+        
+          </div>
+          <!--<button type="button" id="loginLink"></button>->
+        </div>
+
+      </section>-->
+
+      <!--<section id="footer">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
@@ -912,9 +904,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
 
-   </div><!-- /.container-fluid -->
+    </div><!-- /.container-fluid -->
     
     <!-- SCRIPT -->
     <script type="text/javascript" src="js/main.js"></script>
