@@ -49,67 +49,26 @@ var SliderStatus = true;
 
 				var brokenImage = "images/broken-image.jpg",
 					activeImg = dataHeader[activeIndex].bigImage
-					//prevImg = dataHeader[prevIndex].bigImage,
-					//nextImg = dataHeader[nextIndex].bigImage;
 
 				if (errors){
 		            for(var i=0; i<errors.length; i++)
 		            {
 		            	activeImg = (errors[i] === activeImg) ? brokenImage : activeImg;
-		            	//prevImg = (errors[i] === prevImg) ? brokenImage : prevImg;
-		            	//nextImg = (errors[i] === nextImg) ? brokenImage : nextImg;
 		            }
 		        }
 		        
 		        setTimeout(function(){
 		        	loaderSVG.hide();
-		        	//SliderInterval();
 		        }, 2000);
-
-				//loaderSVG.hide();
 
 		        activeSlide.css("background-image", "url('" + activeImg + "')");
 			
-				//PrevImg.attr("src", prevImg);
-				
-				//NextImg.attr("src", nextImg);
 		    }
 		});
 
 		activeTitle.text(dataHeader[activeIndex].title);
 
-		//PrevAuthor.text("by " + dataHeader[prevIndex].author);
-		//PrevTitle.text(dataHeader[prevIndex].title);
-		//NextAuthor.text("by " + dataHeader[nextIndex].author);
-		//NextTitle.text(dataHeader[nextIndex].title);
 	}
-
-	/*function loader(n){
-		clearInterval(SliderTimeout);
-		loaderSVG.show();
-
-		for (var i = 0; i<=objHeaderLength; i++) {
-			if(dataHeader[i].show && n)
-			{
-				activeIndex = (i+1 > objHeaderLength) ? 0 : i+1;
-				nextIndex = (activeIndex+1 > objHeaderLength) ? 0 : activeIndex+1;
-				prevIndex = i;
-
-				break;
-			}
-			else if(dataHeader[i].show && !n)
-			{
-				activeIndex = (i-1 < 0) ? objHeaderLength : i-1;
-				prevIndex = (activeIndex-1 < 0) ? objHeaderLength : activeIndex-1;
-				nextIndex = i;
-				break;
-			}
-		}
-
-		setTimeout(function(){
-			startImageHeader();
-		}, 800);
-	}*/
 
 	startImageHeader();
 
